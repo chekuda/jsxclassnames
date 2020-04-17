@@ -1,0 +1,15 @@
+{
+  "name": "jsxclassnames",
+  "version": "1.0.5",
+  "description": "The function will receive an object and will return a classname per truthy property.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chekuda/classnames"
+  },
+  "author": "jose luis checa exposito",
+  "license": "ISC"
+}
