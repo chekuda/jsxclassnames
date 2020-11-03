@@ -1,8 +1,7 @@
 {
   "name": "jsxclassnames",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "The function will receive an object and will return a classname per truthy property.",
-  "main": "index.js",
   "scripts": {
     "test": "test"
   },
