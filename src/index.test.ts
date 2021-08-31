@@ -42,5 +42,9 @@ describe('jsxclasses', () => {
       expect(jsxclasses('lorem', 0, true, [1,'test', null])).toBe('lorem true 1 test')
       expect(jsxclasses('lorem', 0, { jose: 1 === 1, sur: null }, [1,'test', null])).toBe('lorem jose 1 test')
     })
+    it('it should return only truthy values but repeated entries', () => {
+      expect(jsxclasses('lorem', 0, true, [1,'lorem', null])).toBe('lorem true 1')
+      expect(jsxclasses('lorem', 0, { jose: 1 === 1, sur: null }, [1,'jose', null])).toBe('lorem jose 1')
+    })
   })
 })
