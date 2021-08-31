@@ -1,20 +1,27 @@
 ## My own jsxclassnames
 
-  The function will receive string|obj|array and will return all the truthy properties.
+A light helper to generate your react classes dynamically.
 
-  ```
+## How to use it
 
+The helper will receive a number|string|obj|array|undefined|null and will return all the truthy properties.
+
+**Component**
+
+  ```jsx
   import jsxclassnames from 'jsxclassnames'
 
   <div
-    className={jsxclassnames({
-      'test--one': true,
+    className={jsxclassnames(
+      { 'test--one': true, 'other-class': 0 },
       'myclass',
-      undefined,
-      ['myotherclass', undefined],
-      [test]: current === id
+      ['myotherclass', current === id],
       })}
     />
-
-    // Output => class="test--one myclass myotherclass test"
   ```
+
+**Component rendered**
+
+```jsx
+   <div class="test--one myclass myotherclass"></div>
+```
